@@ -2,14 +2,9 @@
 
 int main(void)
 {
-    int c, space, tab, newline;
+    int c, space = 0, tab = 0, newline = 0;
 
-    space = 0;
-    tab = 0;
-    newline = 0;
-
-    while ((c = getchar()) != EOF)
-    {
+    while ((c = getchar()) != EOF) {
         if (c == ' ')
             ++space;
         else if (c == '\t')
@@ -20,6 +15,5 @@ int main(void)
             ;
     }
     printf("space is %d, tab is %d, newline is %d\n", space, tab, newline);
-    getchar();
     return 0;
 }
