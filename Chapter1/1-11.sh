@@ -1,0 +1,1 @@
+./1-wordCount.out < 1-wordCount.c
