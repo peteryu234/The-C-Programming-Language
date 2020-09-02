@@ -1,4 +1,4 @@
-filename = 1-15
+filename = 1-readLine
 run.out: $(filename).o
 	cc -o run.out $(filename).o
 	./run.out
