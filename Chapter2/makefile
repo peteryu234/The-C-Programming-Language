@@ -1,4 +1,4 @@
-filename = 1-21
+filename = 2-03
 run.out: $(filename).o
 	cc -o run.out $(filename).o
 	./run.out
