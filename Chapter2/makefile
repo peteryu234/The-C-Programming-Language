@@ -1,10 +1,10 @@
 filename = 2-03
-run.out: $(filename).o
-	cc -o run.out $(filename).o
-	./run.out
+$(filename).out: $(filename).o
+	cc -o $(filename).out $(filename).o
+	./$(filename).out
 .PHONY: clean
 clean:
-	-rm -f run.out $(filename).o
+	-rm -f *.out *.o
 run:
-	./run.out
+	./$(filename).out
 

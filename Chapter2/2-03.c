@@ -9,7 +9,7 @@ int checked;
 int main(void)
 {
 	extern long result;
-	extern checked;
+	extern int checked;
 	int c;
 
 	result = 0L;
@@ -61,7 +61,7 @@ long htoi(char c, char base)
 void readall(void)
 {
 	extern long result;
-	extern checked;
+	extern int checked;
 	int c;
 
 	while ((c = getchar()) != '\n')
