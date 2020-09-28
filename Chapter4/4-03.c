@@ -69,10 +69,8 @@ int main(void)
 /* push函数：把f压入到值栈中 */
 void push(double f)
 {
-    if (sp < MAXVAL) {
+    if (sp < MAXVAL)
         val[sp++] = f;
-        // printf("%g ", f);
-    }
     else
         printf("error: stack full, can't push %g\n", f);
 }
